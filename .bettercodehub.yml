@@ -3,10 +3,11 @@ exclude:
 - /config/.*
 - /database/.*
 - /public/index.php
+- /public/js/app.js
 - /resources/lang/en/.*
 - /routes/.*
 - /server.php
 component_depth: 1
 languages:
-- php
 - javascript
+- php
