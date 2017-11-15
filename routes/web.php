@@ -18,3 +18,6 @@ Route::get('/', function () {
 if(App::isLocal()){
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 }
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
