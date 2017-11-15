@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+if(App::isLocal()){
+    Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+}
